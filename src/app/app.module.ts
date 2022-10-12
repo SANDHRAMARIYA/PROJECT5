@@ -6,7 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductlistComponent } from './productlist/productlist.component';
+import { HomeComponent } from './home/home.component';
    const appRoutes:Routes=[
+    {
+      path:"",component:HomeComponent
+    },
     {
     path:"view",component:ProductlistComponent
     }
@@ -15,7 +19,8 @@ import { ProductlistComponent } from './productlist/productlist.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    ProductlistComponent
+    ProductlistComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
